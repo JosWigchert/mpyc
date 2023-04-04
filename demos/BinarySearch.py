@@ -110,7 +110,7 @@ print(f"random_index = {random_index} ~ index = {index}")
 random_index = random.randint(0, n-1)
 a = s[random_index]
 try:
-    index = binary_search_insecure(x, a)
+    index = binary_search_insecure(s, a)
     print(f"random_index = {random_index} ~ index = {index}")
 except:
     traceback.print_exc()
