@@ -24,7 +24,7 @@
 # %%
 from mpyc.runtime import mpc    # load MPyC
 secint = mpc.SecInt()           # 32-bit secure MPyC integers
-await mpc.start()            # required only when run with multiple parties
+mpc.run(mpc.start())            # required only when run with multiple parties
 import traceback                # to show some suppressed error messages
 import math
 import random
